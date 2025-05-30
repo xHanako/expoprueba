@@ -1,4 +1,10 @@
 function evaluarCuestionario() {
+    const username = document.getElementById("username").value.trim();
+    if (!username) {
+        alert("Por favor, ingresa tu nombre antes de responder el cuestionario.");
+        return;
+    }
+
     const respuestasCorrectas = {
         q1: ['a'],
         q2: ['a'],
