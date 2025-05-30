@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuestionario Advocaciones de la Virgen María</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuestionario Advocaciones de la Virgen</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Cuestionario de Advocaciones Marianas</h1>
-        <label for="username">Nombre del participante:</label>
-        <input type="text" id="username" name="username" placeholder="Tu nombre">
+  <div class="container">
+    <h1>Cuestionario: Advocaciones de la Virgen María</h1>
+    <form id="quiz-form">
+      <label for="username">Nombre:</label>
+      <input type="text" id="username" name="username" required />
 
-        <form id="quizForm">
-            <div class="question">
-                <p>1. ¿Dónde se apareció Nuestra Señora de Fátima?</p>
-                <label><input type="checkbox" name="q1" value="a"> Portugal</label>
-                <label><input type="checkbox" name="q1" value="b"> Francia</label>
-                <label><input type="checkbox" name="q1" value="c"> México</label>
-            </div>
+      <div class="question">
+        <p>1. ¿Dónde apareció la Virgen de Fátima?</p>
+        <label><input type="radio" name="q1" value="a" /> España</label>
+        <label><input type="radio" name="q1" value="b" /> Francia</label>
+        <label><input type="radio" name="q1" value="c" /> Portugal</label> <!-- correcta -->
+        <label><input type="radio" name="q1" value="d" /> Italia</label>
+      </div>
 
-            <div class="question">
-                <p>2. ¿Qué advocación mariana está relacionada con Lourdes?</p>
-                <label><input type="checkbox" name="q2" value="a"> Nuestra Señora de Lourdes</label>
-                <label><input type="checkbox" name="q2" value="b"> Virgen de Montserrat</label>
-                <label><input type="checkbox" name="q2" value="c"> Virgen de la Macarena</label>
-            </div>
+      <div class="question">
+        <p>2. ¿En qué país apareció la Virgen de Lourdes?</p>
+        <label><input type="radio" name="q2" value="a" /> Portugal</label>
+        <label><input type="radio" name="q2" value="b" /> Francia</label> <!-- correcta -->
+        <label><input type="radio" name="q2" value="c" /> México</label>
+        <label><input type="radio" name="q2" value="d" /> España</label>
+      </div>
 
-            <div class="question">
-                <p>3. ¿Qué Virgen es conocida como la patrona del mar y protectora de los pescadores?</p>
-                <label><input type="checkbox" name="q3" value="a"> Nuestra Señora del Carmen</label>
-                <label><input type="checkbox" name="q3" value="b"> Virgen del Valle</label>
-                <label><input type="checkbox" name="q3" value="c"> Nuestra Señora de la Asunción</label>
-            </div>
+      <div class="question">
+        <p>3. ¿Qué advocación está relacionada con los marineros?</p>
+        <label><input type="radio" name="q3" value="a" /> Nuestra Señora del Carmen</label> <!-- correcta -->
+        <label><input type="radio" name="q3" value="b" /> Nuestra Señora de los Dolores</label>
+        <label><input type="radio" name="q3" value="c" /> Nuestra Señora del Pilar</label>
+        <label><input type="radio" name="q3" value="d" /> Virgen de Montserrat</label>
+      </div>
 
-            <div class="question">
-                <p>4. ¿Cuál es el título de María que hace referencia a su dolor por la pasión de Cristo?</p>
-                <label><input type="checkbox" name="q4" value="a"> Nuestra Señora de los Dolores</label>
-                <label><input type="checkbox" name="q4" value="b"> Inmaculada Concepción</label>
-                <label><input type="checkbox" name="q4" value="c"> Reina de la Paz</label>
-            </div>
+      <div class="question">
+        <p>4. ¿Cuál advocación representa el sufrimiento de María?</p>
+        <label><input type="radio" name="q4" value="a" /> Nuestra Señora de la Asunción</label>
+        <label><input type="radio" name="q4" value="b" /> Inmaculada Concepción</label>
+        <label><input type="radio" name="q4" value="c" /> Nuestra Señora de los Dolores</label> <!-- correcta -->
+        <label><input type="radio" name="q4" value="d" /> Nuestra Señora del Rosario</label>
+      </div>
 
-            <div class="question">
-                <p>5. ¿Qué advocación mariana celebra la pureza de María desde su concepción?</p>
-                <label><input type="checkbox" name="q5" value="a"> Inmaculada Concepción</label>
-                <label><input type="checkbox" name="q5" value="b"> Virgen de Lourdes</label>
-                <label><input type="checkbox" name="q5" value="c"> Virgen del Pilar</label>
-            </div>
+      <div class="question">
+        <p>5. ¿Qué advocación celebra la pureza de María desde su concepción?</p>
+        <label><input type="radio" name="q5" value="a" /> Inmaculada Concepción</label> <!-- correcta -->
+        <label><input type="radio" name="q5" value="b" /> Nuestra Señora de la Asunción</label>
+        <label><input type="radio" name="q5" value="c" /> Virgen del Carmen</label>
+        <label><input type="radio" name="q5" value="d" /> Virgen de Lourdes</label>
+      </div>
 
-            <div class="question">
-                <p>6. ¿Qué advocación mariana está relacionada con el rezo del rosario?</p>
-                <label><input type="checkbox" name="q6" value="a"> Nuestra Señora del Rosario</label>
-                <label><input type="checkbox" name="q6" value="b"> Virgen de Guadalupe</label>
-                <label><input type="checkbox" name="q6" value="c"> Nuestra Señora del Carmen</label>
-            </div>
+      <div class="question">
+        <p>6. ¿Qué advocación se celebra especialmente en octubre?</p>
+        <label><input type="radio" name="q6" value="a" /> Nuestra Señora del Rosario</label> <!-- correcta -->
+        <label><input type="radio" name="q6" value="b" /> Virgen de Guadalupe</label>
+        <label><input type="radio" name="q6" value="c" /> Virgen del Valle</label>
+        <label><input type="radio" name="q6" value="d" /> Virgen del Pilar</label>
+      </div>
 
-            <div class="question">
-                <p>7. ¿Qué advocación mariana celebra la entrada de María al cielo?</p>
-                <label><input type="checkbox" name="q7" value="a"> Nuestra Señora de la Asunción</label>
-                <label><input type="checkbox" name="q7" value="b"> Nuestra Señora de Luján</label>
-                <label><input type="checkbox" name="q7" value="c"> Virgen del Rocío</label>
-            </div>
+      <div class="question">
+        <p>7. ¿Qué advocación está relacionada con la subida de María al cielo?</p>
+        <label><input type="radio" name="q7" value="a" /> Nuestra Señora del Rosario</label>
+        <label><input type="radio" name="q7" value="b" /> Virgen de Fátima</label>
+        <label><input type="radio" name="q7" value="c" /> Nuestra Señora de la Asunción</label> <!-- correcta -->
+        <label><input type="radio" name="q7" value="d" /> Virgen de los Dolores</label>
+      </div>
 
-            <button type="button" onclick="evaluarCuestionario()">Responder Cuestionario</button>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
+      <button type="submit">Responder Cuestionario</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
