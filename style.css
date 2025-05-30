@@ -1,65 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
 .container {
-    max-width: 700px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    text-align: center;
-    color: #333;
-}
-
-label, p {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  text-align: center;
 }
 
 .question {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-left: 5px solid #007BFF;
-    background-color: #f1f8ff;
-    border-radius: 4px;
+  margin-bottom: 20px;
 }
 
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-}
-
-button:hover {
-    background-color: #0056b3;
+label {
+  display: block;
+  margin: 5px 0;
 }
 
 .correct {
-    background-color: #d4edda !important;
+  background-color: #d4edda;
 }
 
 .incorrect {
-    background-color: #f8d7da !important;
+  background-color: #f8d7da;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
